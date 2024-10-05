@@ -7,5 +7,20 @@ const removeFromArray = function(arr, ...targets) {
     return arr;
 };
 
+
+const removePush = function (array, ...arguments) {
+    const newArray = [];
+    array.forEach( (arrayItem) => {
+        if (!arguments) {
+            newArray.push(arrayItem);
+        }
+    });
+    return newArry;
+} 
+
+const removeFilter = function (array, ...args) {
+    return array.filter(value => !args.includes(value))
+}
+
 // Do not edit below this line
 module.exports = removeFromArray;
